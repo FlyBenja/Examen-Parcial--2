@@ -1,5 +1,23 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0; /* Elimina cualquier margen para que el banner pueda estar pegado arriba */
+}
+
+.jumbotron {
+    background-color: #007bff !important; /* Color azul brillante que combina con las tarjetas */
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 1rem 2rem;
+    width: 100%; /* Asegura que el jumbotron ocupe el ancho completo */
+}
+
+.container, .container-fluid {
+    padding: 0;
+    max-width: 100%; /* Ajusta el contenedor para usar el máximo ancho posible */
+}
+
+.custom-select, .btn-info {
+    margin-top: 20px; /* Espacio arriba de estos elementos */
 }
 
 .result {
@@ -15,6 +33,39 @@ body {
 }
 
 .section h3 {
-    color: #0056b3;
+    color: #0056b3; /* Azul que combina con el tema */
     border-bottom: 2px solid #0056b3;
+    text-align: center;
+    font-weight: bold;
+}
+
+#resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    transition: transform .2s;
+    flex: 0 0 100%; /* Hace que la tarjeta ocupe el ancho completo para el encabezado del departamento */
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto para cuando el mouse pasa sobre la tarjeta */
+}
+
+.card-title, .card-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    background-color: #007bff; /* Azul brillante para el encabezado */
+    color: white;
+}
+
+.card-body {
+    flex: 0 0 32%; /* Ajusta las tarjetas de secciones para que se muestren tres por fila */
 }
