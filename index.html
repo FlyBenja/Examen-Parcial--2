@@ -8,25 +8,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid"> <!-- Usa container-fluid para ancho completo -->
         <div class="jumbotron text-center bg-primary text-white">
             <h1 class="display-4">Indicadores Demográficos por Departamento</h1>
             <p class="lead">Seleccione un departamento para ver la información detallada.</p>
             <select id="departamento" class="custom-select w-50 mx-auto">
                 <option value="999">El Progreso</option>
-                <option value="201">Guastatoya</option>
-                <option value="202">Morazán</option>
-                <option value="203">San Agustin Acasaguastlán</option>
-                <option value="204">San Cristobál Acasaguastlán</option>
-                <option value="205">El Jicaro</option>
-                <option value="206">Sansare</option>
-                <option value="207">Sanarate</option>
-                <option value="208">San Antonio la Paz</option>
+                <!-- Más opciones aquí -->
             </select>
             <button onclick="fetchData()" class="btn btn-info mt-3">Consultar Datos</button>
         </div>
 
-        <div id="resultados"></div>
+        <div id="resultados" class="d-flex flex-wrap justify-content-around">
+            <!-- Las tarjetas se insertarán aquí mediante JavaScript -->
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

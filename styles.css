@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron {
-    background-color: #007bff !important; /* Color azul brillante que combina con las tarjetas */
+    background-color: #093A68 !important; /* Color azul brillante que combina con las tarjetas */
     margin-bottom: 0;
     margin-top: 0;
     padding: 1rem 2rem;
@@ -69,3 +69,4 @@ body {
 .card-body {
     flex: 0 0 32%; /* Ajusta las tarjetas de secciones para que se muestren tres por fila */
 }
+
